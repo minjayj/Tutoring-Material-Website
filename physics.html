@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Physics 1</title>
+    <title>AP Physics 1 Materials</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] } };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
     <header>
-        <h1>AP Physics 1</h1>
+        <h1>AP Physics 1: Algebra-Based</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -17,27 +21,39 @@
         <a href="csa.html">AP Comp Sci A</a>
     </nav>
     <div class="container">
-        <h2>Current Weekly Materials</h2>
+        <h2>Weekly File Drops</h2>
         <ul class="materials-list">
-            <li><a href="#">Week 1: Kinematics Worksheet</a> (PDF)</li>
-            <li><a href="#">Week 1: Answer Key</a> (PDF)</li>
+            <li><a href="#">Week 1: 1D Kinematics Problem Set</a> (PDF)</li>
+            <li><a href="#">Week 1: Kinematics Answer Key</a> (PDF)</li>
         </ul>
 
-        <h2>Course Syllabus (College Board Units)</h2>
+        <div class="study-guide">
+            <h3>Tutor's Study Guide: Unit 1 Kinematics</h3>
+            <p><strong>The Big 3 Kinematic Equations (Uniform Acceleration):</strong></p>
+            <ul>
+                <li>$v = v_0 + at$ (Use when missing position $x$)</li>
+                <li>$x = x_0 + v_0t + \frac{1}{2}at^2$ (Use when missing final velocity $v$)</li>
+                <li>$v^2 = v_0^2 + 2a(x - x_0)$ (Use when missing time $t$)</li>
+            </ul>
+            <p><strong>Graphing Motion Rules:</strong></p>
+            <ul>
+                <li>The <strong>slope</strong> of a Position vs. Time graph gives Velocity.</li>
+                <li>The <strong>slope</strong> of a Velocity vs. Time graph gives Acceleration.</li>
+                <li>The <strong>area under the curve</strong> of a Velocity vs. Time graph gives Displacement ($\Delta x$).</li>
+            </ul>
+        </div>
+
+        <h2>Official Course Pacing (College Board Units)</h2>
         <table>
-            <tr>
-                <th>Unit</th>
-                <th>Topic</th>
-                <th>Status</th>
-            </tr>
-            <tr><td>1</td><td>Kinematics</td><td>In Progress</td></tr>
-            <tr><td>2</td><td>Force and Translational Dynamics</td><td>Upcoming</td></tr>
-            <tr><td>3</td><td>Work, Energy, and Power</td><td>Upcoming</td></tr>
-            <tr><td>4</td><td>Linear Momentum</td><td>Upcoming</td></tr>
-            <tr><td>5</td><td>Torque and Rotational Dynamics</td><td>Upcoming</td></tr>
-            <tr><td>6</td><td>Energy and Momentum of Rotating Systems</td><td>Upcoming</td></tr>
-            <tr><td>7</td><td>Oscillations</td><td>Upcoming</td></tr>
-            <tr><td>8</td><td>Fluids</td><td>Upcoming</td></tr>
+            <tr><th>Unit</th><th>Topic</th></tr>
+            <tr><td>1</td><td>Kinematics</td></tr>
+            <tr><td>2</td><td>Force and Translational Dynamics</td></tr>
+            <tr><td>3</td><td>Work, Energy, and Power</td></tr>
+            <tr><td>4</td><td>Linear Momentum</td></tr>
+            <tr><td>5</td><td>Torque and Rotational Dynamics</td></tr>
+            <tr><td>6</td><td>Energy and Momentum of Rotating Systems</td></tr>
+            <tr><td>7</td><td>Oscillations</td></tr>
+            <tr><td>8</td><td>Fluids (Newly Added)</td></tr>
         </table>
     </div>
 </body>

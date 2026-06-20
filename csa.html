@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Computer Science A</title>
+    <title>AP Computer Science A Materials</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>AP Computer Science A</h1>
+        <h1>AP Computer Science A (Java)</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -17,18 +17,30 @@
         <a href="csa.html">AP Comp Sci A</a>
     </nav>
     <div class="container">
-        <h2>Current Weekly Materials</h2>
+        <h2>Weekly File Drops</h2>
         <ul class="materials-list">
-            <li><a href="#">Week 1: Intro to Java & Primitive Types</a> (Zip)</li>
-            <li><a href="#">Week 1: Homework Solution Code</a> (.java)</li>
+            <li><a href="#">Week 1: Primitive Types & String Methods Starter Code</a> (.java)</li>
         </ul>
 
-        <h2>Course Syllabus (College Board Units)</h2>
+        <div class="study-guide">
+            <h3>Tutor's Study Guide: Unit 1 Using Objects & Methods</h3>
+            <p><strong>Primitive Types vs. Reference Types:</strong></p>
+            <ul>
+                <li>Primitives (<code>int</code>, <code>double</code>, <code>boolean</code>) store the actual numerical or boolean value directly in memory.</li>
+                <li>Reference types (Objects like <code>String</code>) store the memory address (reference) where the object data is located.</li>
+            </ul>
+            <p><strong>Essential String Methods (Strings are Immutable!):</strong></p>
+            <ul>
+                <li><code>length()</code>: Returns the total number of characters.</li>
+                <li><code>substring(int from, int to)</code>: Extracts characters starting at index <code>from</code> up to (but <strong>not</strong> including) index <code>to</code>.</li>
+                <li><code>indexOf(String str)</code>: Returns the index of the first occurrence of <code>str</code>. Returns -1 if not found.</li>
+            </ul>
+            <p><strong>The Math Class (Static Methods):</strong> Because these are static, you call them directly on the class name without creating a Math object. Know how to use <code>Math.abs()</code>, <code>Math.pow(base, exponent)</code>, <code>Math.sqrt()</code>, and <code>Math.random()</code> (which generates a double from 0.0 inclusive up to 1.0 exclusive).</p>
+        </div>
+
+        <h2>Official Course Pacing (New Condensed 4-Unit Framework)</h2>
         <table>
-            <tr>
-                <th>Unit</th>
-                <th>Topic</th>
-            </tr>
+            <tr><th>Unit</th><th>Topic</th></tr>
             <tr><td>1</td><td>Using Objects and Methods</td></tr>
             <tr><td>2</td><td>Selection and Iteration</td></tr>
             <tr><td>3</td><td>Class Creation</td></tr>

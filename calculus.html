@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AP Calculus BC</title>
+    <title>AP Calculus BC Materials</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] } };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
     <header>
@@ -19,21 +21,29 @@
         <a href="csa.html">AP Comp Sci A</a>
     </nav>
     <div class="container">
-        <h2>Current Weekly Materials</h2>
+        <h2>Weekly File Drops</h2>
         <ul class="materials-list">
-            <li><a href="#">Week 1: Limits & Continuity Practice</a> (PDF)</li>
-            <li><a href="#">Week 1: Answer Key</a> (PDF)</li>
+            <li><a href="#">Week 1: Evaluating Limits Graphically & Analytically</a> (PDF)</li>
         </ul>
 
-        <h2>Course Syllabus (College Board Units)</h2>
+        <div class="study-guide">
+            <h3>Tutor's Study Guide: Unit 1 Limits & Continuity</h3>
+            <p><strong>The 3-Part Definition of Continuity at a Point $x = c$:</strong></p>
+            <ol>
+                <li>$f(c)$ is defined.</li>
+                <li>$\lim_{x \to c} f(x)$ exists (left-hand limit equals right-hand limit).</li>
+                <li>$\lim_{x \to c} f(x) = f(c)$.</li>
+            </ol>
+            <p><strong>Evaluating Limits Strategy:</strong> Always try direct substitution first. If you yield an indeterminate form like $\frac{0}{0}$ or $\frac{\infty}{\infty}$, use algebraic manipulation (factoring, multiplying by the conjugate) or apply L'Hôpital's Rule: $\lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)}$.</p>
+            <p><strong>Intermediate Value Theorem (IVT):</strong> If $f$ is continuous on the closed interval $[a, b]$, and $k$ is any number between $f(a)$ and $f(b)$, then there is at least one number $c$ in the interval such that $f(c) = k$.</p>
+        </div>
+
+        <h2>Official Course Pacing (College Board Units)</h2>
         <table>
-            <tr>
-                <th>Unit</th>
-                <th>Topic</th>
-            </tr>
+            <tr><th>Unit</th><th>Topic</th></tr>
             <tr><td>1</td><td>Limits and Continuity</td></tr>
-            <tr><td>2</td><td>Differentiation: Basic Rules</td></tr>
-            <tr><td>3</td><td>Differentiation: Composite, Implicit, Inverse</td></tr>
+            <tr><td>2</td><td>Differentiation: Definition and Fundamental Properties</td></tr>
+            <tr><td>3</td><td>Differentiation: Composite, Implicit, and Inverse Functions</td></tr>
             <tr><td>4</td><td>Contextual Applications of Differentiation</td></tr>
             <tr><td>5</td><td>Applying Derivatives to Analyze Functions</td></tr>
             <tr><td>6</td><td>Integration and Accumulation of Change</td></tr>
